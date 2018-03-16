@@ -1,0 +1,53 @@
+@import 'variables';
+
+.App-header {
+  align-items: center;
+  background-color: $header-background;
+  color: $header-color;
+  display: flex;
+  height: 2em;
+  justify-content: space-between;
+  padding: 1em;  
+
+  &__logo {
+    font-size: 2em;
+    text-transform: uppercase;
+
+    i.fas.fa-cloud {
+      font-size: 1.2em;
+      text-shadow: -4px 0px #b9c4c9;
+      transform: rotateY(178deg);
+    }
+  }
+
+  &__menu {
+    align-items: center;
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-between;
+
+    .header-link {
+      a {
+        color: lighten($color: $header_color, $amount: 40);
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &.active {
+          color: $header_color;
+        }
+      }
+    }
+    
+    button {
+      border: 2px solid;
+      border-radius: 1.5em; 
+      color: lighten($header_color, 30);
+      font-size: 1em;
+      font-weight: 600;
+      padding: 0.5em 2em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+}

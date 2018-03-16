@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "jest": true,
+        "node": true
+    },
+    "rules": {
+        "react/jsx-filename-extension": 0,
+        "eslint.packageManager": "yarn"
+    }
+}

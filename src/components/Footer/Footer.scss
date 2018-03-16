@@ -1,0 +1,10 @@
+@import 'variables';
+
+.App-footer {
+  background-color: $footer-background;
+  bottom: 0;
+  color: $footer-color;
+  height: 10em;
+  position: fixed;
+  width: 100%;
+}
