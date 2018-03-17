@@ -1,9 +1,10 @@
 import React from 'react';
+import { SummarySection } from '../';
 
 function Home() {
   return (
-    <div>
-      This is the content
+    <div className="App-home">
+      <SummarySection />
     </div>
   );
 }
