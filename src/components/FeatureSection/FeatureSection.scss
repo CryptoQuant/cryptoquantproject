@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'partials';
+.feature-section {
+  h2 {
+    color: #024a72;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    &.secondary {
+      color: $medium-color;
+    }
+  }
+
+  .actions-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    .action {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 14em;
+      align-items: center;
+      justify-content: space-between;
+
+      &__img {
+        img {
+          border-radius: 50%;
+          height: 200px;
+          width: 200px;
+        }
+      }
+
+      &__title {
+        margin-top: -2em;
+        margin-bottom: 1em;
+      }
+
+      &__description {
+        color: $medium-color;
+      }
+
+      button.primary {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
