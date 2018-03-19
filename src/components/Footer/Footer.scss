@@ -4,7 +4,98 @@
   background-color: $footer-background;
   bottom: 0;
   color: $footer-color;
-  height: 10em;
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
+
+  .row {
+    display: flex;
+    margin-top: 2em;
+
+    .column {
+      &.logo {
+        color: white;
+        flex-basis: 20%;
+        font-size: 3em;
+        padding: 1em;
+
+        i.fas {
+          text-shadow: -6px 0px #b9c4c9;
+          transform: rotateY(178deg);
+        }
+      }
+
+      &.links {
+        flex-basis: 15%;
+      }
+
+      &.discover {
+        flex-basis: 15%;
+      }
+
+      &.follow-us {
+        flex-basis: 20%;
+        
+        ul {
+          display: flex;
+          font-size: 2em;
+          justify-content: left;
+
+          li {
+            margin-right: 0.5em;
+            padding: 0;
+          }
+        }
+      }
+
+      &.mailing-list {
+        align-items: left;
+        display: flex;
+        flex-basis: 20%;
+        flex-direction: column;
+        
+        .text {
+          text-align: left;
+          line-height: 2.5em;
+        }
+
+        .input-group {
+          align-content: center;
+          height: 3em;
+          background-color: white;
+          display: flex;
+
+          input, button {
+            font-size: 1.2em;
+          }
+
+          button {
+            background-color: $primary-background;
+            color: $primary-color;
+            border: none;
+          }
+        }
+      }
+
+      > h3 {
+        font-size: 1.3em;
+        text-align: left;
+      }
+      
+      > ul {
+        padding: 0;
+        text-align: left;
+
+        li {
+          list-style-type: none;
+          padding: 0.5em 0;
+        }
+      }
+    }
+
+    &.copyright {
+      margin: 2em 4em;
+    }
+  }
 }

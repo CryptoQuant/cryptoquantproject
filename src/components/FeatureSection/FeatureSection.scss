@@ -11,9 +11,11 @@
     }
   }
 
-  .actions-container {
+  .actions-container, .features-container {
     display: flex;
     justify-content: space-evenly;
+    margin-top: -1em;
+    padding-bottom: 2em;
 
     .action {
       display: flex;
@@ -31,6 +33,7 @@
       }
 
       &__title {
+        font-size: 1.2em;
         margin-top: -2em;
         margin-bottom: 1em;
       }
@@ -43,5 +46,9 @@
         font-size: 0.8em;
       }
     }
+  }
+
+  .features-container {
+    background-color: #f8f7f5;
   }
 }

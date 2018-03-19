@@ -19,15 +19,22 @@ function FeatureAction(props) {
       <div className="action__description" >
         {description}
       </div>
-      <button className="primary">
-        <span>{actionLabel}</span> <i className="fas fa-arrow-right" />
-      </button>
+      {
+        actionLabel &&
+        <button className="primary">
+          <span>{actionLabel}</span> <i className="fas fa-arrow-right" />
+        </button>
+      }
     </div>
   );
 }
 
+FeatureAction.defaultProps = {
+  actionLabel: '',
+};
+
 FeatureAction.propTypes = {
-  actionLabel: PropTypes.string.isRequired,
+  actionLabel: PropTypes.string,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
