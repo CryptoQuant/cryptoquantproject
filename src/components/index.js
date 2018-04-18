@@ -4,6 +4,7 @@ import FeatureSection from './FeatureSection';
 import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
+import Landing from './Landing';
 import SummarySection from './SummarySection';
 
 export {
@@ -13,5 +14,6 @@ export {
   Footer,
   Header,
   Home,
+  Landing,
   SummarySection,
 };

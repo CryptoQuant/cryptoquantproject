@@ -5,19 +5,20 @@ import './App.css';
 import {
   Footer,
   Header,
-  Home,
+  Landing,
 } from '../';
 
 function App() {
+  const isLanding = true;
   return (
     <div className="App">
-      <Header />
+      { !isLanding && <Header /> }
       <div className="App-body">
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Landing} />
         </Switch>
       </div>
-      <Footer />
+      { !isLanding && <Footer /> }
     </div>
   );
 }

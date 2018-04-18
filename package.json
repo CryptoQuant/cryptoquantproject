@@ -3,14 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^4.12.1",
+    "i18next": "^11.2.2",
+    "i18next-browser-languagedetector": "^2.2.0",
     "node-sass-chokidar": "^1.1.0",
     "npm-run-all": "^4.1.2",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-i18next": "^7.6.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "react-share": "^2.1.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",

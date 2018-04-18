@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { StaticRouter } from 'react-router-dom';
 import './index.css';
 import { App } from './components';
 import registerServiceWorker from './registerServiceWorker';
+import './i18n';
+import './data/databaseConfig';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <StaticRouter>
     <App />
-  </BrowserRouter>
+  </StaticRouter>
   , document.getElementById('root'),
 );
 registerServiceWorker();
