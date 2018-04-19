@@ -3,7 +3,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { reactI18nextModule } from 'react-i18next';
 
 const defaultLanguage = 'en';
-const currentLanguages = ['en'];
+const currentLanguages = ['en', 'ru'];
 i18n
   .use(LanguageDetector)
   .use(reactI18nextModule) // if not using I18nextProvider
