@@ -6,6 +6,9 @@ import {
   EmailShareButton,
 } from 'react-share';
 
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.min.css';
 import './landing.css';
 
 import storage from '../../data/storage';
@@ -33,7 +36,12 @@ class Landing extends Component {
   saveEmail(event) {
     event.preventDefault();
     const { email } = this.state;
-    return email && storage.addEmail(email);
+    return email && storage.addEmail(email)
+      .then(() =>
+        toast('OK', {
+          autoClose: 1500,
+          position: toast.POSITION.BOTTOM_CENTER,
+        }));
   }
 
   render() {
@@ -101,6 +109,7 @@ class Landing extends Component {
                   </form>
                 </div>
               </div>
+              <ToastContainer />
             </div>
           )
         }

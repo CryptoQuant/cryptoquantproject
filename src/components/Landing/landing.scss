@@ -1,7 +1,9 @@
 @import 'variables';
+body {
+  background-image: url('../../assets/landing-background.jpg');
+}
 
 .App-landing {
-  background-image: url('../../assets/landing-background.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   color: $primary-color;
@@ -103,7 +105,8 @@
         background-color: $primary-background;
 
         &:disabled {
-          background-color: lighten($primary-background, 50%);
+          color: darken($primary-color, 30%);
+          background-color: darken($primary-background, 30%);
           cursor: not-allowed;
         }
       }
