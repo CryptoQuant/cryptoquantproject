@@ -28,7 +28,8 @@
     "build": "npm-run-all build-css build-js && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "surge-deploy": "surge -p build -d https://cryptoquant-project.surge.sh/"
+    "surge-deploy": "surge -p build -d https://cryptoquant-project.surge.sh/",
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "eslint": "^4.18.2",

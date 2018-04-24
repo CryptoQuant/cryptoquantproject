@@ -60,7 +60,6 @@ class Landing extends Component {
                   <div className="dropdown-content">
                     <button onClick={() => i18n.language !== 'en' && i18n.changeLanguage('en')}>EN</button>
                     <button onClick={() => i18n.language !== 'zh' && i18n.changeLanguage('zh')}>ZH</button>
-                    <button onClick={() => i18n.language !== 'ja' && i18n.changeLanguage('ja')}>JA</button>
                     <button onClick={() => i18n.language !== 'ru' && i18n.changeLanguage('ru')}>RU</button>
                   </div>
                 </div>
@@ -89,7 +88,7 @@ class Landing extends Component {
               <div className="App-landing__content">
                 <div className="project-name">
                   <div className="project-name__logo">
-                    <i className="fas fa-cloud" /> Quant
+                    Quant
                   </div>
                 </div>
                 <div className="main-text">
