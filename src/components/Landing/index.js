@@ -88,7 +88,7 @@ class Landing extends Component {
               <div className="App-landing__content">
                 <div className="project-name">
                   <div className="project-name__logo">
-                    Quant
+                    Bluequant
                   </div>
                 </div>
                 <div className="main-text">

@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="App-header">
       <div className="App-header__logo">
-        <i className="fas fa-cloud" /> Quant
+        <i className="fas fa-cloud" /> Bluequant
       </div>
       <div className="App-header__menu">
         <div className="header-link">
