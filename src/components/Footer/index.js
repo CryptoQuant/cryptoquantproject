@@ -7,7 +7,7 @@ function Footer() {
     <footer className="App-footer">
       <div className="row">
         <div className="column logo">
-          <i className="fas fa-cloud" /> Bluequant
+          Bluequant
         </div>
         <div className="column links">
           <h3>Links</h3>
